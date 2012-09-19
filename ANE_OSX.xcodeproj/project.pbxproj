@@ -15,6 +15,8 @@
 		F2F7072816075D6700FCE6E3 /* ANE_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F7070A16075D6700FCE6E3 /* ANE_OSX.framework */; };
 		F2F7072E16075D6700FCE6E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2F7072C16075D6700FCE6E3 /* InfoPlist.strings */; };
 		F2F7073116075D6700FCE6E3 /* ANE_OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F7073016075D6700FCE6E3 /* ANE_OSXTests.m */; };
+		F2F7073B1607633700FCE6E3 /* Adobe AIR in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F7073A1607633700FCE6E3 /* Adobe AIR */; };
+		F2F7073E160764EF00FCE6E3 /* ANE_OSX.c in Sources */ = {isa = PBXBuildFile; fileRef = F2F7073C160764EF00FCE6E3 /* ANE_OSX.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		F2F7072D16075D6700FCE6E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2F7072F16075D6700FCE6E3 /* ANE_OSXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANE_OSXTests.h; sourceTree = "<group>"; };
 		F2F7073016075D6700FCE6E3 /* ANE_OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANE_OSXTests.m; sourceTree = "<group>"; };
+		F2F7073A1607633700FCE6E3 /* Adobe AIR */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR"; path = "../../../../Applications/Adobe Flash Builder 4.6/sdks/4.6.0/runtimes/air/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR"; sourceTree = "<group>"; };
+		F2F7073C160764EF00FCE6E3 /* ANE_OSX.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ANE_OSX.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F7073B1607633700FCE6E3 /* Adobe AIR in Frameworks */,
 				F2F7070E16075D6700FCE6E3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +76,7 @@
 		F2F706FE16075D6700FCE6E3 = {
 			isa = PBXGroup;
 			children = (
+				F2F7073A1607633700FCE6E3 /* Adobe AIR */,
 				F2F7071316075D6700FCE6E3 /* ANE_OSX */,
 				F2F7072916075D6700FCE6E3 /* ANE_OSXTests */,
 				F2F7070C16075D6700FCE6E3 /* Frameworks */,
@@ -111,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F2F7071A16075D6700FCE6E3 /* ANE_OSX.h */,
+				F2F7073C160764EF00FCE6E3 /* ANE_OSX.c */,
 				F2F7071B16075D6700FCE6E3 /* ANE_OSX.m */,
 				F2F7071416075D6700FCE6E3 /* Supporting Files */,
 			);
@@ -264,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F7071C16075D6700FCE6E3 /* ANE_OSX.m in Sources */,
+				F2F7073E160764EF00FCE6E3 /* ANE_OSX.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +372,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ANE_OSX/ANE_OSX-Prefix.pch";
 				INFOPLIST_FILE = "ANE_OSX/ANE_OSX-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.6/sdks/4.6.0/runtimes/air/mac/Adobe AIR.framework/Versions/1.0\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -379,6 +391,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ANE_OSX/ANE_OSX-Prefix.pch";
 				INFOPLIST_FILE = "ANE_OSX/ANE_OSX-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.6/sdks/4.6.0/runtimes/air/mac/Adobe AIR.framework/Versions/1.0\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};

@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#include <Adobe AIR.h>
+
 @interface ANE_OSX : NSObject
 
+__declspec(dllexport) void initializer(void** extData, FREContextInitializer* ctxInitializer, FREContextFinalizer* ctxFinalizer);
+__declspec(dllexport) void finalizer(void* extData);
+
 @end
+
+
